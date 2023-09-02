@@ -30,4 +30,17 @@ fun main(args: Array<String>) {
     println(set)
 
 
+    println("\n")
+
+    //Collection de chave-valor
+    var map = hashMapOf("chave-1" to 1, "chave-2" to 2, "chave-3" to 3, "chave-4" to 4)
+
+    map.put("chave-5" ,  5)
+    println(map)
+    map.remove("chave-2")
+    for (chaves in map.keys){
+        println(chaves + " = " + map.get(chaves))
+    }
+
+
 }
