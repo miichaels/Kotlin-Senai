@@ -21,4 +21,13 @@ fun main(args: Array<String>) {
     var nomes = arrayListOf("Jose","Paulo","Maria", "Felipe")
     nomes.add("Roger")
     println(nomes)
+
+    //Diferença do hashset para a arraylist = Ela não aceita numeros repitidos e os organiza da forma que achar melhor
+    var set = hashSetOf(1,2,3,4,4,60,70)
+    println(set)
+    set.add(100)
+    set.remove(3)
+    println(set)
+
+
 }
