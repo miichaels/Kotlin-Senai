@@ -1,0 +1,128 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cadastro"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+
+        />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="30dp"
+        />
+
+    <EditText
+        android:id="@+id/lastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Last name"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="E-mail"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <EditText
+        android:id="@+id/phoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone number"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        />
+
+
+    <RadioGroup
+        android:id="@+id/radio"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/fem"
+            android:layout_width="106dp"
+            android:layout_height="wrap_content"
+            android:text="Feminino" />
+
+        <RadioButton
+            android:id="@+id/masc"
+            android:layout_width="127dp"
+            android:layout_height="wrap_content"
+            android:text="Masculino" />
+
+
+        <RadioButton
+            android:id="@+id/notRespost"
+            android:layout_width="158dp"
+            android:layout_height="wrap_content"
+            android:text="Prefiro não responder" />
+    </RadioGroup>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/enviar"
+            android:layout_width="102dp"
+            android:layout_height="38dp"
+            android:layout_marginHorizontal="140dp"
+            android:layout_marginStart="10dp"
+
+            android:text="Enviar"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="5dp" />
+
+        <Button
+            android:id="@+id/mostrar"
+            android:layout_width="117dp"
+            android:layout_height="41dp"
+
+            android:layout_marginStart="20dp"
+
+            android:text="Mostrar"
+            app:layout_constraintStart_toEndOf="@+id/enviar"
+            tools:layout_editor_absoluteY="3dp" />
+
+        <Button
+            android:id="@+id/limpar"
+            android:layout_width="141dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="20dp"
+
+            android:layout_marginEnd="10dp"
+            android:text="Cancelar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.304"
+            app:layout_constraintStart_toEndOf="@+id/mostrar"
+            tools:layout_editor_absoluteY="4dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>
